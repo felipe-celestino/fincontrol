@@ -27,8 +27,15 @@ body main {
     min-height: 760px;
     margin-top: 80px;
 }
+.box-saldo {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 0;
+}
 
-.card-body .title-saldo {
+.box-saldo .contents .title-saldo {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -36,13 +43,13 @@ body main {
     padding: 5px 0;
 }
 
-.card-body .title-saldo .card-text {
+.box-saldo .contents .title-saldo .card-text {
     font-size: 1rem;
     font-weight: 600;
     color: #212529;
 }
 
-.card-body .content-saldo {
+.box-saldo .contents .content-saldo {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -50,14 +57,14 @@ body main {
     padding: 0 0 10px 0;
 }
 
-.card-body .content-saldo p {
+.box-saldo .contents .content-saldo p {
     font-size: 2rem;
     font-weight: 700;
     color: #212529;
     margin: 0;
 }
 
-.card-body .content-lancamentos p {
+.box-saldo .contents .content-lancamentos p {
     width: 100%;
     display: flex;
     align-items: center;
@@ -67,25 +74,74 @@ body main {
     font-size: 1rem;
     color: #212529;
 }
-.card-body .content-lancamentos p span {
+.box-saldo .contents .content-lancamentos p span {
     font-style: italic;
 }
-.menu-top .card-body div {
+
+.three-menu {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.three-menu .contents {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
-.menu-top .card-body div .box {
-    max-width: 120px;
+
+.three-menu .contents .box {
+    width: 150px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-.menu-top .card-body div .box a {
+.three-menu .contents .box:hover {
+    background-color: #000;
+}
+.three-menu .contents .box:hover a img {
+    filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(104%) contrast(105%);
+}
+.three-menu .contents .box:hover a p {
+    color: #fff;
+}
+
+.three-menu .contents .box a {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 15px;
+}
+
+.three-menu .contents .box a p {
     font-size: 1rem;
     font-weight: 600;
     color: #212529;
 }
 
-.menu-top .card-body div .box p {
-    margin-top: 22px;
+.last-transaction {
+    width: 100%;
+    max-width: 500px;
+    min-height: 500px;
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.last-transaction .contents .title-saldo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0;
 }
 
 footer {
