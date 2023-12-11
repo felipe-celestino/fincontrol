@@ -124,6 +124,7 @@ body main {
     font-size: 1rem;
     font-weight: 600;
     color: #212529;
+    padding-left: 6px;
 }
 
 .last-transaction {
@@ -144,6 +145,32 @@ body main {
     padding: 5px 0;
 }
 
+.last-transaction .contents .title-saldo .card-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.last-transaction .contents .resume ul {
+    list-style: none;
+    padding: 0;
+}
+
+.last-transaction .contents .resume ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.last-transaction .value-transaction {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
 footer {
     /*margin-top: 100%;*/
 }
@@ -162,26 +189,22 @@ footer img {
         min-height: 500px;
     }
 }
+@media (min-width: 768px) and (max-width: 991px) {}
 @media (min-width: 768px) {
     body .navbar-expand-md .navbar-collapse {
         justify-content: flex-end;
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
-    .menu-top .card-body div {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-    }
-}
 @media (max-width: 480px) {
-    .menu-top .card-body div .box {
-        max-width: 100px;
+    .three-menu .contents .box {
+        width: 100px;
+    }
+    .three-menu .contents .box a {
+        padding-left: 0;
     }
 }
-
-@media (max-width: 320px) {
-    .menu-top .card-body div .box {
-        max-width: 80px;
+@media (max-width: 360px) {
+    .three-menu .contents {
+        gap: 5px;
     }
 }
