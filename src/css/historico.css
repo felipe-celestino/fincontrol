@@ -1,0 +1,162 @@
+body {
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0 !important;
+}
+body .icon-bitcoin {
+    filter: invert(100%) sepia(12%) saturate(7452%) hue-rotate(188deg) brightness(109%) contrast(112%);
+}
+body header nav .title-header {
+    color: #fff;
+    font-weight: 600;
+}
+
+body .nav-link {
+    color: #fff;
+    margin: 0 3px;
+}
+body .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #000;
+}
+
+body .nav-link:hover, .nav-link:focus {
+    background-color: #fff;
+    color: #000;
+}
+
+body main {
+    min-height: 745px;
+    margin-top: 80px;
+}
+body main .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transaction-date {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.transaction-date form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+}
+
+.transaction-date form label {
+    font-weight: 600;
+    color: #000;
+}
+
+.transaction-date form select {
+    margin-left: 5px;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.transaction {
+    width: 100%;
+    max-width: 500px;
+    height: 430px;
+    background-color: #fff;
+    padding: 10px 0;
+    margin: 20px 0 0 0;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+.transaction .contents .title-saldo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 5px 0;
+}
+
+.transaction .contents .title-saldo .card-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #212529;
+}
+
+.transaction .contents .resume ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transaction .contents .resume ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transaction .contents .resume ul li:last-child a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 45px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: #212529;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.transaction .contents .resume ul li:last-child a:hover {
+    background-color: #000;
+}
+
+.transaction .value-transaction {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+footer img {
+    filter: invert(100%) sepia(12%) saturate(7452%) hue-rotate(188deg) brightness(109%) contrast(112%);
+}
+@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 768px) {
+    body .navbar-expand-md .navbar-collapse {
+        justify-content: flex-end;
+    }
+}
+@media (max-width: 480px) {
+    body main {
+        min-height: 650px;
+        margin-top: 80px;
+    }
+    .three-menu .contents .box {
+        width: 100px;
+    }
+    .three-menu .contents .box a {
+        padding-left: 0;
+    }
+}
+@media (max-width: 360px) {
+    .three-menu .contents {
+        gap: 5px;
+    }
+}
